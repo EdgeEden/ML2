@@ -14,7 +14,7 @@ df = pd.read_csv('synthetic_fraud_dataset.csv')
 df = df.drop('Transaction_ID', axis=1)
 df = df.drop('User_ID', axis=1)
 # uncomment to drop Risk_Score
-# df = df.drop('Risk_Score', axis=1)
+df = df.drop('Risk_Score', axis=1)
 
 # Convert Timestamp to datetime and extract features
 df['Timestamp'] = pd.to_datetime(df['Timestamp'])
